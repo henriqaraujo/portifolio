@@ -1,0 +1,43 @@
+    @keyframes typing {
+        from {
+            width: 0%
+        }
+        to {
+            width: 100%
+        }
+    }
+    /* The typewriter cursor effect */
+    
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent
+        }
+        10% {
+            border-color: #757070
+        }
+    }
+    
+    .animacao h1 {
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        /* Adjust as needed */
+        animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+    }
+    
+    .animacao h3 {
+        overflow: hidden;
+        /* Garante que o conteúdo não seja revelado até a animação */
+        /* O cursor da máquina de escrever */
+        white-space: nowrap;
+        /* Mantém o conteúdo em uma única linha */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        /* Adjust as needed */
+        animation: typing 4s steps(30, end), blink-caret .5s step-end infinite;
+    }
