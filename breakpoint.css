@@ -4,20 +4,22 @@
     .foto-eu {
         display: none;
     }
-    .container-intro {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
     .fo-introducao {
-        font: 1.5em/1.5em 'Merriweather', 'Sans-serif';
+        font: 1.3em/1.5em 'Merriweather', 'Sans-serif';
         letter-spacing: -0.7px;
         color: rgba(255, 255, 255, 0.8);
         align-items: center;
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+        min-height: 100vh;
+        padding: 0em 1.8em;
+    }
+}
 
 @media screen and (max-width: 576px) {}
 
