@@ -12,16 +12,22 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
     .container {
-        width: 100%;
-        display: flex;
         min-height: 100vh;
         padding: 0em 1.8em;
     }
+    .mim {
+        font-size: 40px;
+    }
+    body {
+        background: url(3.jpg) no-repeat fixed;
+        /*background-size: cover;*/
+        background-size: 100% 100%;
+    }
 }
-
-@media screen and (max-width: 576px) {}
 
 
 /*Min-width - acima de 500px aplica
