@@ -12,23 +12,67 @@
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0em 1.8em;
+    }
+}
 
 @media screen and (max-width: 576px) {
     .container {
+        width: 100%;
         min-height: 100vh;
         padding: 0em 1.8em;
+        display: block;
     }
     .mim {
         font-size: 40px;
     }
     body {
-        background: url(3.jpg) no-repeat fixed;
-        /*background-size: cover;*/
-        background-size: 100% 100%;
+        background: url(10.jpg) no-repeat fixed;
+        background-size: cover;
+    }
+    header {
+        border-bottom: 3px solid rgba(218, 218, 218, 0.79);
+    }
+    .background-rodape {
+        border-top: 2.2px solid rgba(218, 218, 218, 0.79);
+    }
+    .container-intro {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        padding: 0em 1.8em;
+    }
+    .container-apresentacao {
+        width: 100%;
+    }
+    .container-objetivo {
+        width: 100%;
+        border: none;
+        min-height: 100vh;
+    }
+    .social-icons a {
+        font-size: 2.2em;
+        color: rgb(255, 255, 255);
+        padding: 0px 10px;
+    }
+    .espaco-topicos {
+        margin-left: 0em;
+    }
+    .estrutura-tecnologias {
+        display: block;
+    }
+    .fo-apresentacao {
+        font: 500 1.2em/1.2em 'Merriweather', 'serif';
     }
 }
 
 
 /*Min-width - acima de 500px aplica
 Max-width - abaixo de 500px aplica*/
+
+
+/*Resolução para celular 1090x1920*/
