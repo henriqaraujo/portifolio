@@ -8,16 +8,21 @@
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link href="animacao.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="breakpoint.css">
+    <link rel="stylesheet" type="text/css" href="animacao.css">
+
     <link rel="icon" href="">
     <!---Icone da página-->
 
 
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+
     <title>Henrique Araújo</title>
 
 </head>
@@ -25,7 +30,7 @@
 <body>
 
     <header>
-        <a href=" inicio.html " class="mim ">.MIM</a>
+        <a href=" index.html " class="mim ">.MIM</a>
         <!--
         <button class="btn-menu"> <i class="fa fa-bars fa-lg "></i></button>
 
@@ -46,16 +51,16 @@
             <div class="fo-introducao animacao">
                 <h1>Olá, me chamo Henrique</h1>
                 <h3>E sou um desenvolvedor Web</h3>
-                <button class="btn-sobre"> Sobre mim </button>
+                <a href="#sobre"><button class="btn-sobre" > Sobre mim </button></a>
             </div>
         </div>
 
         <div class="container-img">
-            <img class="foto-eu" src="./imagens/Eu.jpeg">
+            <img class="foto-eu" src="../imagens/eu.jpeg">
         </div>
     </section>
 
-    <section class="container">
+    <section id="sobre" class="container">
         <div class="container-apresentacao">
             <div class="fo-apresentacao">
                 <h2>Um pouco sobre minha pessoa</h2>
@@ -92,18 +97,19 @@
                 <h2>Objetivo e Experiências</h2>
                 <p>Meu maior objetivo atualmente é absorver o máximo de conhecimento e experiência possível com as pessoas e aprender cada vez mais sobre a programação.</p>
                 <p>Durante esse tempo passei por 2 empresas, a primeira fui responsavel por administrar toda a parte de infra em 2 filiais, prestava todo o suporte ao usuário, manutenção de micros, câmeras e rede em geral, tudo que envolvia infra eu era
-                    responsavel.</p>
+                    responsavel.
+                </p>
             </div>
         </div>
 
 
     </section>
 
-    <footer class="container-rodape rodape">
+    <footer class="container-rodape background-rodape">
         <div class="social-icons ">
 
             <a href="https://www.linkedin.com/in/henriquearauj0/" target="_blank"> <i class="fa fa-linkedin "> </i></a>
-            <a href="# "> <i class="fa fa-envelope "></i></a>
+            <a href="#intro"> <i class="fa fa-envelope "></i></a>
             <a href="# "> <i class="fa fa-github "></i></a>
             <a href="https://www.facebook.com/HenriqueCotsa" target="_blank"> <i class="fa fa-facebook "></i></a>
             <a href="https://www.instagram.com/henriqaraujo_/" target="_blank"> <i class="fa fa-instagram "></i></a>
@@ -125,6 +131,18 @@
 
         $(".btn-close ").click(function() {
             $(".menu ").hide();
+        });
+
+        //Efeito scroll
+        $('div a').click(function(e) {
+            e.preventDefault();
+            var id = $(this).attr('href'),
+                targetOffset = $(id).offset().top,
+                menuHeight = $('nav').innerHeight();
+
+            $('html, body').animate({
+                scrollTop: targetOffset
+            }, 500);
         });
     </script>
 </body>
