@@ -27,7 +27,7 @@
         margin: 0 auto;
         /* Gives that scrolling effect as the typing happens */
         /* Adjust as needed */
-        animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+        animation: typing 3s steps(40, end), blink-caret .5s step-end infinite;
     }
     
     .animacao h3 {
@@ -39,5 +39,5 @@
         margin: 0 auto;
         /* Gives that scrolling effect as the typing happens */
         /* Adjust as needed */
-        animation: typing 4s steps(30, end), blink-caret .5s step-end infinite;
+        animation: typing 4s steps(40, end), blink-caret .5s step-end infinite;
     }
