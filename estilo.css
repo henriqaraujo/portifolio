@@ -12,7 +12,7 @@
         width: 100%;
         display: flex;
         min-height: 100vh;
-        padding: 0em 5em;
+        padding: 0em 2em;
     }
     
     div p {
@@ -21,7 +21,6 @@
     
     body {
         background: url(imagens/fundo.jpg) no-repeat fixed;
-        /*background-size: cover;*/
         background-size: cover;
         height: 100vh;
         width: 100%;
@@ -71,10 +70,11 @@
         width: 50%;
         display: flex;
         align-items: center;
+        padding: 0em 2em;
     }
     
     .fo-introducao {
-        font: 1.8em/1.5em 'Merriweather', 'Sans-serif';
+        font: 2.5em/1.5em 'Merriweather', 'Sans-serif';
         letter-spacing: -0.7px;
         color: rgba(255, 255, 255, 0.8);
         align-items: center;
@@ -111,13 +111,12 @@
     /*----------------------------- Apresentação ----------------------------- */
     
     .container-apresentacao {
-        width: 50%;
-        min-height: 100vh;
+        width: 55%;
         padding: 5em 1.5em;
     }
     
     .container-objetivo {
-        width: 50%;
+        width: 45%;
         padding: 5em 1.5em;
         border-left: 3px solid #ccc;
         /*border-right-radius: 10px 10px 10px;*/
@@ -136,11 +135,7 @@
     }
     
     .estrutura-tecnologias {
-        display: flex;
-    }
-    
-    .espaco-topicos {
-        margin-left: 2em;
+        display: block;
     }
     /*----------------------------- Apresentação - FIM ----------------------------- */
     /*----------------------------- Rodapé -----------------------------*/
