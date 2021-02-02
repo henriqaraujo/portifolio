@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 768px) {
     .fo-introducao {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     .fo-apresentacao {
         text-align: justify;
@@ -31,6 +31,7 @@
         font: 1.2em/1em 'Merriweather', serif;
         cursor: pointer;
         font-weight: bold;
+        border: 2px solid;
     }
     .btn-sobre:hover {
         color: rgb(0, 0, 0);
