@@ -13,6 +13,7 @@
         display: flex;
         min-height: 100vh;
         padding: 0em 2em;
+        background: linear-gradient(150deg, rgb(219, 219, 219), rgb(163, 164, 167));
     }
     
     div p {
@@ -20,9 +21,6 @@
     }
     
     body {
-        background: url(imagens/fundo.jpg) no-repeat fixed;
-        background-size: cover;
-        height: 100vh;
         width: 100%;
     }
     
@@ -54,14 +52,14 @@
     .mim {
         float: left;
         color: white;
-        font-size: 50px;
+        font-size: 30px;
         transition: 1.5s;
         font-family: 'Noto Serif', 'serif';
     }
     
     .mim:hover {
         transition: 2s;
-        color: rgb(105, 105, 105);
+        color: rgb(140, 145, 182);
     }
     /*----------------------------- FIM Barra de navegação FIM----------------------------- */
     /*----------------------------- Introdução ----------------------------- */
@@ -74,9 +72,9 @@
     }
     
     .fo-introducao {
-        font: 2.5em/1.5em 'Merriweather', 'Sans-serif';
+        font: 2em/1.5em 'Merriweather', 'Sans-serif';
         letter-spacing: -0.7px;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(0, 0, 0, 0.8);
         align-items: center;
     }
     
@@ -94,19 +92,19 @@
     .btn-sobre {
         background: transparent;
         border-radius: 50px;
-        border: 3px solid rgba(255, 255, 255, 0.8);
-        padding: 8px 20px 8px 20px;
+        border: 2.3px solid rgba(0, 0, 0, 0.8);
+        padding: 11px 20px;
         margin-top: 0.7em;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(0, 0, 0, 0.8);
         font: 1em/1.3em 'Merriweather', serif;
+        font-weight: 600;
         cursor: pointer;
-        font-weight: bold;
     }
     
     .btn-sobre:hover {
-        transition: 1.5s;
-        color: rgba(255, 255, 255, 0.8);
-        background-color: rgba(94, 94, 94, 1);
+        transition: 2s;
+        background-color: rgb(140, 145, 182);
+        border: none;
     }
     /*----------------------------- Introdução - FIM ----------------------------- */
     /*----------------------------- Apresentação ----------------------------- */
@@ -120,11 +118,12 @@
         width: 45%;
         padding: 5em 1.5em;
         border-left: 3px solid #ccc;
+        height: 100vh;
         /*border-right-radius: 10px 10px 10px;*/
     }
     
     .fo-apresentacao {
-        color: rgb(211, 211, 211);
+        color: rgb(0, 0, 0);
         font: 500 1.4em 'Merriweather', 'serif';
         text-align: justify;
         letter-spacing: -0.3px;
@@ -163,7 +162,7 @@
     
     .social-icons a:hover {
         transition: 1.5s;
-        color: rgba(94, 94, 94, 1);
+        color: rgb(140, 145, 182);
     }
     /*----------------------------- Rodapé - FIM -----------------------------*/
     /*----------------------------- Menu Mobile ----------------------------- 

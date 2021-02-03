@@ -30,7 +30,7 @@
 <body>
 
     <header>
-        <a href=" index.html " class="mim ">.MIM</a>
+        <a href=" index.html " class="mim "></a>
         <!--
         <button class="btn-menu"> <i class="fa fa-bars fa-lg "></i></button>
 
@@ -56,7 +56,7 @@
         </div>
 
         <div class="container-img">
-            <img class="foto-eu" src="./imagens/eu.jpeg">
+            <img class="foto-eu" src="../imagens/eu.jpeg">
         </div>
     </section>
 
@@ -69,7 +69,7 @@
                     minha grande paixão é o desenvolvimento web, ainda sou novo neste ramo mas venho cada vez mais me dedicando, meu grande foco é se especializar em Front-End mas sem deixar de lado o Back-end, gosto bastante de inovar e estou sempre
                     em busca de novos conhecimentos e experiências.</p>
 
-                <p> Acredito que o que me fez amar a programação é o fato de conseguir ver um resultado de "imediato" e támbem o mundo tão grande que é. É possível fazer tantas coisas nesse mundo e isso me impressiona e motiva muito.
+                <p> Acredito que o que me fez amar a programação é o fato de conseguir ver um resultado de "imediato" e támbem o mundo tão grande que é. É possível fazer tantas coisas nesse mundo e isso me impressiona e motiva cada vez mais.
                 </p>
 
 
@@ -94,7 +94,7 @@
         <div class="container-objetivo">
             <div class="fo-apresentacao">
                 <h2>Objetivo</h2>
-                <p>Meu maior objetivo atualmente é absorver o máximo de conhecimento e experiência possível com pessoas e aprender cada vez mais sobre a programação e como pessoa támbem.</p>
+                <p>Meu maior objetivo atualmente é absorver o máximo de conhecimento e experiência possível com pessoas e aprender cada vez mais sobre a programação.</p>
 
             </div>
         </div>
@@ -141,5 +141,8 @@
                 scrollTop: targetOffset
             }, 500);
         });
+
+        const nomeDiv = document.querySelector("header a")
+        nomeDiv.textContent = "<Header/>"
     </script>
 </body>
